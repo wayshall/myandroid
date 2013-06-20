@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project name="android-common" default="compile" basedir=".">
+
+	<property environment="env" />
+	
+	<property name="project.name" value="android-common" />
+	<property name="project.version" value="0.5" />
+	<property name="lib.dir" value="${basedir}/lib" />
+
+	<property name="src.common.dir" value="${basedir}/src/common" />
+	
+	<property name="classes.dir" value="${basedir}/ant-bin" />
+	<property name="dist.dir" value="${basedir}/dist" />
+	<property name="deploy.dir" value="E:\mydev\android\workspace\call-firewall\lib" />
+	
+	
+	<path id="build.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<!-- ================================= 
+          target: initCompile              
+         ================================= -->
+    <target name="initCompile" description="--> description">
+		<mkdir dir="${classes.dir}"/>
+    </target>
+
+	
+	<target name="compile" depends="initCompile" description="compile...">
+		<javac srcdir="${src.common.dir}" destdir="${classes.dir}" debug="on" deprecation="on" target="1.6" optimize="off" includes="**" encoding="utf-8">
+			<classpath refid="build.classpath"></classpath>
+		</javac>
+	</target>
+	
+
+	<target name="jar" depends="compile" description="create jar">
+		<delete dir="${dist.dir}"/>
+		<mkdir dir="${dist.dir}"/>
+		<jar jarfile="${dist.dir}/${project.name}-${project.version}.jar">
+			<fileset dir="${classes.dir}">
+				<include name="**/*.class"/>
+				<include name="**/*.xml"/>
+				<include name="**/*.MF"/>
+				<include name="**/*.properties"/>
+			</fileset>
+		</jar>
+	</target>
+	
+	<target name="deploy-jar" depends="undeploy-jar, jar" description="deploy the jar archive">
+		<copy todir="${deploy.dir}">
+			<fileset dir="${dist.dir}">
+				<include name="${project.name}-${project.version}.jar"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="undeploy-jar">
+		<delete dir="${deploy.dir}">
+			<include name="${project.name}*.jar"/>
+		</delete>
+	</target>
+	
+</project>
+

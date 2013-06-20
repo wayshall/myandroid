@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <Button
+    	android:id="@+id/blacklist"
+    	android:onClick="showBlacklist"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/app_black_phone_list"
+    	android:layout_marginTop="1dip"
+    	android:background="@drawable/button_selector"
+    /> 
+    <Button
+    	android:id="@+id/whilelist"
+    	android:onClick="showWhitelist"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/app_white_phone_list"
+    	android:layout_marginTop="1dip"
+    	android:background="@drawable/button_selector"
+    /> 
+    <Button
+    	android:id="@+id/btn_phone_logs"
+    	android:onClick="showPhoneLogs"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/phone_intercept_logs"
+    	android:layout_marginTop="1dip"
+    	android:background="@drawable/button_selector"
+    /> 
+    <Button
+    	android:id="@+id/btn_sms_logs"
+    	android:onClick="showSmsLogs"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/sms_intercept_logs"
+    	android:layout_marginTop="1dip"
+    	android:background="@drawable/button_selector"
+    /> 
+    <Button
+    	android:id="@+id/setting"
+    	android:onClick="showSetting"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/app_setting"
+    	android:layout_marginTop="1dip"
+    	android:background="@drawable/button_selector"
+    />
+</LinearLayout>

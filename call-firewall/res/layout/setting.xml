@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <TextView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="拦截方式"
+    />
+    <TextView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:height="3dip"
+    	android:textColor="#FFFFFF"
+    />
+    <RadioGroup
+    	android:id="@+id/radgroup_intercept_way"
+    	android:layout_width="wrap_content"
+    	android:layout_height="fill_parent"
+   		>
+    	<RadioButton
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/radbtn_intercept_way_blacklist"
+    		android:text="黑名单"
+    	/>
+    	<RadioButton
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/radbtn_intercept_way_whitelist"
+    		android:text="白名单"
+    	/>
+    </RadioGroup>
+</LinearLayout>

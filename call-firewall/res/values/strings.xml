@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">来电防火墙 </string>
+    <string name="app_welcome">欢迎使用来电防火墙，感谢小鱼！</string>
+    <string name="saved_success">保存成功！</string>
+    <string name="delete_success">删除成功！</string>
+    
+    <string name="app_black_phone_list">黑名单</string>
+    <string name="app_white_phone_list">白名单</string>
+    <string name="app_setting">设置</string>
+    <string name="app_control_phone_service">是否监控来电</string>
+    <string name="app_control_sms_service">是否监控短信</string>
+    <string name="app_empty_list">还没有任何号码！</string>
+    <string name="app_add_phone">添加黑名单号码：</string>
+    <string name="app_input_name">请输名称：</string>
+    <string name="app_input_phone">请输入号码：</string>
+    <string name="app_submit">   确       定     </string>
+    <string name="app_sms_showcontent">短信内容：</string>
+    
+    <string name="app_alert_title">你好</string>
+    <string name="app_alert_message">确定要退出程序？</string>
+    <string name="app_alert_ok"> 确   定 </string>
+    <string name="app_alert_cancel"> 取   消 </string>
+    
+    <!-- menu -->
+    <string name="menu_add_phone">添加黑名单</string>
+    <string name="menu_del_phone">删除号码</string>
+    <string name="menu_edit_phone">编辑号码</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_stopservice">停止监听电话</string>
+    <string name="menu_back">返回</string>
+    <string name="menu_exit">退出</string>
+    
+    <!-- button -->
+    <string name="btn_block_this_phone"> 拦   截  </string>
+    <string name="btn_allow_this_phone"> 添   加  </string>
+    
+    <!-- tab -->
+    <string name="tab_call_log">最近联系人</string>
+    <string name="tab_sms">短信联系人</string>
+    <string name="tab_customer">自定义</string>
+    
+    <!-- validate  -->
+    <string name="validate_phone_exsit">该电话号码已存在！</string>
+    
+    <!-- intercept log list -->
+    <string name="clear_intercept_logs">清空拦截记录</string>
+    <string name="intercept_logs_still_empty">还没有拦截记录</string>
+    <string name="phone_intercept_logs">电话拦截记录</string>
+    <string name="sms_intercept_logs">短信拦截记录</string>
+    
+</resources>
