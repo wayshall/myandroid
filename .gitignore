@@ -6,3 +6,4 @@ dist
 logs
 bin
 ant-bin
+.metadata

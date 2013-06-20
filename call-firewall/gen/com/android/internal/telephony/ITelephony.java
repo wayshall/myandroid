@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: E:\\mydev\\android\\workspace\\call-firewall\\src\\com\\android\\internal\\telephony\\ITelephony.aidl
+ * Original file: E:\\mydev\\android\\github\\call-firewall\\src\\com\\android\\internal\\telephony\\ITelephony.aidl
  */
 package com.android.internal.telephony;
 public interface ITelephony extends android.os.IInterface
